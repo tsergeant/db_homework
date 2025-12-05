@@ -1,0 +1,23 @@
+# ────────────────────────────────
+#  Database Systems Course Repo
+# ────────────────────────────────
+
+# Expected Files
+.env
+*.class
+
+# Docker
+docker-compose.override.yml
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+.tmp/
+temp/
+tmp/
+.DS_Store
+Thumbs.db
+
+# IDE / editor metadata
+*.swp

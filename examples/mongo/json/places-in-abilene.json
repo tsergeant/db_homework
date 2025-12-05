@@ -1,0 +1,76 @@
+[
+	{
+		"name": "Chick-fil-a",
+		"categories": [ "restaurant", "affordable" ],
+		"geometry": {
+			"type": "Point",
+			"coordinates": [ -99.6983876, 32.4789278 ]
+		}
+	},
+	{
+		"name": "Cinemark Abilene and XD",
+		"categories": [ "theater", "swanky" ],
+		"geometry": {
+			"type": "Point",
+			"coordinates": [ -99.7117971, 32.4785511 ]
+		}
+	},
+	{
+		"name": "Abilene Zoological Park",
+		"categories": [ "attraction" ],
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[ -99.697193, 32.445005 ],
+					[ -99.691067, 32.444217 ],
+					[ -99.690928, 32.441836 ],
+					[ -99.687430, 32.441899 ],
+					[ -99.688514, 32.435753 ],
+					[ -99.690928, 32.437080 ],
+					[ -99.697193, 32.445005 ]
+				]
+			]
+		}
+	},
+	{
+		"name": "Camp Barkeley Dog Park",
+		"categories": [ "attraction" ],
+		"geometry": {
+			"type": "Point",
+			"coordinates": [ -99.690149, 32.438085 ]
+		}
+	},
+	{
+		"name": "Lytle Land & Cattle Company",
+		"categories": [ "restaurant", "expensive" ],
+		"geometry": {
+			"type": "Point",
+			"coordinates": [ -99.6930351, 32.4449211 ]
+		}
+	},
+	{
+		"name": "Craig Middle School",
+		"categories": [ "school" ],
+		"geometry": {
+			"type": "Point",
+			"coordinates": [ -99.709835, 32.441541 ]
+		}
+	},
+	{
+		"name": "Hardin-Simmons University",
+		"categories": ["college", "school", "awesome" ],
+		"geometry": {
+			"type": "Point",
+			"coordinates": [ -99.7379672, 32.4772153 ]
+		}
+	},
+	{
+		"name": "Taco Bell",
+		"categories": [ "restaurant", "affordable" ],
+		"geometry": {
+			"type": "Point",
+			"coordinates": [ -99.731999, 32.4678667 ]
+		}
+	}
+]

@@ -1,0 +1,49 @@
+------------------------
+ JDBC In-Class Exercise
+------------------------
+In this exercise you will practice establishing a connection to the
+csci.hsutx.edu server and writing a JDBC program on it.
+
+
+1) Establish an ssh connection to your csci.hsutx.edu account. Do all remaining
+steps from that command-line interface.
+
+2) Download the DBDemo4.java program from josephus. You can use this command:
+
+wget https://josephus.sergeantservices.com/classes/db/source/DBDemo4.java
+
+3) Rename DBDemo4.java to ICE.java. (mv DBDemo4.java ICE.java)
+
+4) Using vim or nano to edit ICE.java. Rename the class to ICE.
+
+5) Using vim/nano Create a file called dbconnect.txt and put the
+following data into it:
+
+org.postgresql.Driver
+jdbc:postgresql://csci.hsutx.edu/demo_db
+demo
+welovethisclass
+
+6) Compile and run ICE.java and verify it is working for you:
+
+javac ICE.java
+java ICE
+
+7) Once you have ICE.java working you should make the following
+modifications to the program. Test each step before moving on to the
+next one.
+
+	a) Modify dbconnect.txt so you will connect to your database rather
+	than the demo. Modify ICE.java so that you perform a valid query
+	from the booksdb schema. You will also need to modify the code that
+	processes the query results.
+
+	b) Change ICE.java so it only uses positional notation. When printing
+	each entry use a for-loop to cycle through the individual fields. For
+	example, suppose your query returns 4 columns. Then create a for-loop
+	that cycles 4 times and put the print statement inside the loop.
+
+	c) Modify ICE.java so that it sends a query that joins all three tables
+	in the booksdb schema. Also modify your for loop to pick up all the columns.
+
+8) Thank you for playing!

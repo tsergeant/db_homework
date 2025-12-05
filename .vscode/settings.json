@@ -1,0 +1,61 @@
+{
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "java.format.settings.url": "eclipse-formatter.xml",
+  "java.debug.settings.console": "integratedTerminal",
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": ["lib/**/*.jar"],
+
+  "editor.formatOnSave": true,
+  "editor.tabSize": 3,
+  "editor.insertSpaces": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "bash",
+
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.inlineSuggest.enable": false,
+  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.chat.enabled": false,
+
+  "editor.inlineSuggest.enabled": false,
+  "intellicode.completionsEnabled": false,
+
+  "files.associations": {
+    "*.sql": "sql"
+  },
+  "sqltools.connections": [
+    {
+      "name": "Local Postgres (Docker)",
+      "driver": "PostgreSQL",
+      "server": "localhost",
+      "port": 5432,
+      "database": "mydb",
+      "username": "student",
+      "password": "student"
+    }
+  ],
+  "extensions.recommendations": [
+    "esbenp.prettier-vscode",
+    "ms-azuretools.vscode-docker",
+    "mtxr.sqltools",
+    "mtxr.sqltools-driver-pg",
+    "vscjava.vscode-java-pack"
+  ],
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  }
+}

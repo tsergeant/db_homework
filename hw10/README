@@ -1,0 +1,12 @@
+This repository provides the starting code for the Bank Account Database
+Transactions homework assignment. All of your work will be placed in
+BankAccountDB.java which implements the Runnable interface and will
+perform each transaction sent by the Driver. DO NOT CHANGE any of
+the other Java source files (DBHelper.java, Driver.java, Transaction.java).
+
+Some other files of interest are:
+	bank.sql - contains code to establish a database required by this assignment
+	javadoc - contains HTML documentation for the provided code; just point your
+	          browser to the index.html file and click away
+
+Definitely take time to view the javadocs and the source code.
