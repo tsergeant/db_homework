@@ -1,6 +1,0 @@
-#!/bin/bash
-USERNAME=YOUR_USERNAME
-PASSWORD=YOUR_PASSWORD
-URI="mongodb+srv://YOUR_CLUSTER_URI"
-
-mongo $URI --username $USERNAME --password $PASSWORD
