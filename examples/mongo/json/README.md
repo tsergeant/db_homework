@@ -1,11 +1,11 @@
-# `mongoload` – MongoDB JSON Import Helper
+# `loadmongo` – MongoDB JSON Import Helper
 
 This project provides two helper scripts for loading JSON array files into a MongoDB database running inside a Docker container.
 
 Supported environments:
 
-- **macOS / Linux / Git Bash on Windows** → `mongoload.sh`
-- **PowerShell (Windows)** → `mongoload.ps1`
+- **macOS / Linux / Git Bash on Windows** → `loadmongo.sh`
+- **PowerShell (Windows)** → `loadmongo.ps1`
 
 Both scripts let you import sample data easily without having to manually copy files into the container.
 
@@ -19,32 +19,32 @@ Before using the scripts, you must have:
 - Authentication database set to **admin**
 - JSON files containing a **JSON array**
 
-## 🚀 Using `mongoload.sh` (macOS, Linux, Git Bash)
+## 🚀 Using `loadmongo.sh` (macOS, Linux, Git Bash)
 
 ### Usage
 
 ```bash
-./mongoload.sh <database> <collection> <json-array-file>
+./loadmongo.sh <database> <collection> <json-array-file>
 ```
 
 ### Example
 
 ```bash
-./mongoload.sh demo users users.json
+./loadmongo.sh demo users users.json
 ```
 
-## 🪟 Using `mongoload.ps1` (PowerShell)
+## 🪟 Using `loadmongo.ps1` (PowerShell)
 
 ### Usage
 
 ```powershell
-.\mongoload.ps1 <database> <collection> <json-array-file>
+.\loadmongo.ps1 <database> <collection> <json-array-file>
 ```
 
 ### Example
 
 ```powershell
-.\mongoload.ps1 demo users users.json
+.\loadmongo.ps1 demo users users.json
 ```
 
 ## 🧪 Example JSON File
@@ -59,7 +59,7 @@ Before using the scripts, you must have:
 ## 📁 File List
 
 ```
-mongoload.sh
-mongoload.ps1
+loadmongo.sh
+loadmongo.ps1
 README.md
 ```

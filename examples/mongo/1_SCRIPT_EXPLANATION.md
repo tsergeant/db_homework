@@ -5,7 +5,7 @@
 
 There are two pairs of scripts:
 - mongoshell.sh and mongoshell.ps1
-- mongorun.sh and mongoshell.ps1
+- runmongo.sh and mongoshell.ps1
 
 If you are using VSCode Terminal in Windows use the .ps1 scripts.
 If you are using MacOS or Windows Git Bash use the .sh scripts.
@@ -37,17 +37,17 @@ NOTE: database name is optional.
 
 Example 1: Connect to default test database
 ```
-./mongorun.sh
+./runmongo.sh
 ```
 
 Example 2: Connect to database named hw13
 ```
-./mongorun.sh hw13
+./runmongo.sh hw13
 ```
 
 ---
 
-## The mongorun Script
+## The runmongo Script
 
 ### What It Does
 - Purpose: Executes a local mongo script in mongocontainer and leaves you connected to interact with the results.
@@ -56,13 +56,13 @@ Example 2: Connect to database named hw13
 
 ### Usage
 ```
-.\mongorun.sh <database> <scriptfile>
+.\runmongo.sh <database> <scriptfile>
 ```
 NOTE: Database name and name of local script file are required.
 
 Example: Execute the albumdb.js file in the albums database in the mongocontainer
 
 ```
-./mongorun.sh albums albumdb.js
+./runmongo.sh albums albumdb.js
 ```
 

@@ -4,7 +4,7 @@ USERNAME=mongo
 PASSWORD=mongo
 
 if [ $# -ne 2 ]; then
-    echo "Usage: mongorun.sh <database> <scriptfile>"
+    echo "Usage: runmongo.sh <database> <scriptfile>"
     exit 1
 fi
 

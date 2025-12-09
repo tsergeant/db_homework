@@ -1,8 +1,8 @@
 param (
-    [Parameter(Mandatory=$true)]
+    [Parameter(Mandatory=$true, Position=0)]
     [string]$Database,
 
-    [Parameter(Mandatory=$true)]
+    [Parameter(Mandatory=$true, Position=1)]
     [string]$ScriptFile
 )
 
@@ -18,14 +18,14 @@ if (-Not (Test-Path $ScriptFile)) {
 }
 
 #----- Build connection URI -----
-$Uri = "mongodb://localhost:27017/${Database}?authSource=admin"
+# CORRECTED: INCLUDE the database path in the URI.
+$Uri = "mongodb://127.0.0.1:27017/${Database}?authSource=admin"
 
 #----- Copy script into container -----
 Write-Host "Copying script into container..."
 docker cp ${ScriptFile} "${Container}:/tmp/runme.js"
 
 #----- Build argument list for mongosh -----
-# Note: Each argument MUST be separate, just like in Bash.
 $Args = @(
     "mongosh",
     $Uri,
@@ -33,10 +33,10 @@ $Args = @(
     "--password", $Password,
     "--file", "/tmp/runme.js",
     "--shell"
+    # REMOVED: The positional $Database argument that caused the "Loading file: hw13" error
 )
 
-Write-Host "Running script and entering interactive shell..."
+Write-Host "Executing script and entering interactive shell. Press CTRL+D or type 'exit' to quit."
 
-#----- Execute mongosh inside container -----
+#----- Execute mongosh inside container (INTERACTIVE) -----
 docker exec -it $Container @Args
-

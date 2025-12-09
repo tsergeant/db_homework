@@ -17,7 +17,15 @@ db_homework/
 ├── docs/
 │   ├── Docker_Tips_for_macOS.md
 │   ├── Docker_Tips_for_Windows.md
-│   └── setup-guide.md
+│   ├── setup-guide.md
+│   ├── misc. pdf docs
+│   └── ...
+├── examples/
+│   ├── jdbc
+│   ├── mongo
+│   ├── plpgsql
+│   ├── sql
+│   └── transactions
 ├── hw01/
 ├── hw02/
 ├── hw03/

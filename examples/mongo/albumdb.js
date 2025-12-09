@@ -1,4 +1,4 @@
-// to load use: ./mongorun.ps1 albums albumdb.js
+// to load use: ./runmongo.ps1 albums albumdb.js
 db.artist.drop();
 db.album.drop();
 

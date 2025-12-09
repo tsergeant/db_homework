@@ -25,19 +25,19 @@ docker compose up --build
 - Execute the mongoshell script with no parameters
 - This should connect you to the container and give you a prompt showing you are in the test database.
 
-### Test Out mongorun
-- Execute the mongorun script with these parameters: albums albumdb.js
+### Test Out runmongo
+- Execute the runmongo script with these parameters: albums albumdb.js
 - Once you are connnected to the container type: view_albums()
 - Then run the other two functions: view_albums2() and view_albums3()
 - You should be seing meaningful output.
 
 ### Load Some Data
 - Move your attention to the examples/mongo/json directory.
-- Read the README.md file to see how the mongoload script works.
+- Read the README.md file to see how the loadmongo script works.
 - Use these commands to load some data (use .sh in MacOS):
 ```
-./mongoload.ps1 starwars people sw_people.json
-./mongoload.ps1 starwars films sw_films.json
+./loadmongo.ps1 starwars people sw_people.json
+./loadmongo.ps1 starwars films sw_films.json
 ```
 - Feel free to load the other star wars data if you want (but not needed)
 - Make sure it is all working by using:
@@ -72,5 +72,5 @@ cd ..
   3. print (using .pretty()) the contents of the inventory collection found in
      the database called first.
 
-- Run myFirst.js using: ./mongorun.ps1 first myFirst.js
+- Run myFirst.js using: ./runmongo.ps1 first myFirst.js
 - Verify that this script is running without error using that command.

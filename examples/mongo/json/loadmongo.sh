@@ -1,12 +1,12 @@
 #!/bin/bash
-# USAGE: mongoload db_name collection_name file_with_json_array
+# USAGE: loadmongo db_name collection_name file_with_json_array
 
 USERNAME=mongo
 PASSWORD=mongo
 
 if [ $# -ne 3 ]
    then
-      echo "Usage: mongoload db_name collection_name file_with_json_array"
+      echo "Usage: loadmongo db_name collection_name file_with_json_array"
       exit 1
 fi
 

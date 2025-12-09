@@ -100,7 +100,7 @@ Use pgAdmin or `psql` to test your connection.
 
 ### Option 2: Using psql CLI
 ```bash
-docker exec -it w2-db psql -U student -d web2db
+docker exec -it dbcontainer psql -U student -d mydb
 ```
 
 Then run:

@@ -1,7 +1,8 @@
+create schema if not exists booksdb;
 create schema booksdb;
 set search_path to booksdb;
 
-create table booksdb.author(
+create table author(
         author_id       int not null,
         firstname       varchar(15),
         lastname        varchar(25) not null,
