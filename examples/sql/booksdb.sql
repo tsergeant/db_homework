@@ -1,5 +1,4 @@
 create schema if not exists booksdb;
-create schema booksdb;
 set search_path to booksdb;
 
 create table author(

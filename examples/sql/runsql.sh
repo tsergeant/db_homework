@@ -24,9 +24,8 @@ fi
 echo "--- Executing SQL script: $SQL_SCRIPT on $DB_NAME as $DB_USER ---"
 
 # The core command:
-# Pipes the content of the argument ($SQL_SCRIPT) into the Docker-psql command,
-# then pipes the psql output to 'less' for scrollable viewing.
-cat "$SQL_SCRIPT" | docker exec -i "$DB_CONTAINER" psql -U "$DB_USER" -d "$DB_NAME" | less -R
+# The pipe to 'less -R' has been removed. Output streams directly to the terminal.
+cat "$SQL_SCRIPT" | docker exec -i "$DB_CONTAINER" psql -U "$DB_USER" -d "$DB_NAME"
 
 # --- Cleanup/Status ---
 if [ $? -eq 0 ]; then
