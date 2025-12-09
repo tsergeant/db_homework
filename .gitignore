@@ -19,5 +19,7 @@ tmp/
 .DS_Store
 Thumbs.db
 
+hw??/postgresql-42.7.8.jar
+
 # IDE / editor metadata
 *.swp
